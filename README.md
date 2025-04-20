@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 吉田和司のポートフォリオサイト
 
-## Getting Started
+このリポジトリは吉田和司のポートフォリオサイトのソースコードを含んでいます。Next.jsとTailwind CSSを使用して構築されています。
 
-First, run the development server:
+## 機能
+
+- レスポンシブデザイン
+- ダークモード/ライトモードの自動切り替え
+- モダンなUIコンポーネント
+- アニメーション効果
+- GitHub Pagesへの自動デプロイ
+
+## 技術スタック
+
+- [Next.js](https://nextjs.org/) - Reactフレームワーク
+- [Tailwind CSS](https://tailwindcss.com/) - ユーティリティファーストCSSフレームワーク
+- [TypeScript](https://www.typescriptlang.org/) - 型安全なJavaScript
+- [GitHub Actions](https://github.com/features/actions) - CI/CDパイプライン
+
+## ローカル開発
+
+このプロジェクトをローカルで実行するには：
 
 ```bash
+# リポジトリをクローン
+git clone https://github.com/yourusername/my_portfolio.git
+cd my_portfolio
+
+# 依存関係をインストール
+npm install
+
+# 開発サーバーを起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いてサイトを確認できます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## デプロイ
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+このプロジェクトはGitHub Actionsを使用して自動的にGitHub Pagesにデプロイされます。
 
-## Learn More
+デプロイするには：
 
-To learn more about Next.js, take a look at the following resources:
+1. GitHubリポジトリの「Settings」タブに移動
+2. 左側のメニューから「Pages」を選択
+3. 「Source」セクションで「GitHub Actions」を選択
+4. mainブランチにプッシュすると、GitHub Actionsが自動的にビルドとデプロイを行います
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## カスタマイズ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ポートフォリオをカスタマイズするには：
 
-## Deploy on Vercel
+- `src/app/page.tsx` - メインコンテンツの編集
+- `src/app/globals.css` - グローバルスタイルの編集
+- `public/` - 画像やその他の静的ファイルの追加
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ライセンス
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+このプロジェクトは [MIT License](LICENSE) の下でライセンスされています。

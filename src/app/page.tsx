@@ -9,7 +9,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[var(--header-bg)] -z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-blue-600/20 to-indigo-600/20 backdrop-blur-sm -z-10"></div>
         
-        <div className="container mx-auto py-16 md:py-24 text-white">
+        <div className="container mx-auto py-16 md:py-24 text-black">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in tracking-tight">
               吉田和司
@@ -26,7 +26,7 @@ export default function Home() {
               </a>
               <a 
                 href="#projects" 
-                className="btn bg-white/20 hover:bg-white/30 text-white"
+                className="btn btn-primary"
               >
                 制作物を見る
               </a>
@@ -101,18 +101,19 @@ export default function Home() {
               <div className="bg-white/50 dark:bg-gray-800/50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <h3 className="font-semibold text-xl mb-4 text-green-600 dark:text-green-400 border-b pb-2 border-green-100 dark:border-green-900">バックエンド</h3>
                 <div className="flex flex-wrap gap-2">
-                  <span className="skill-tag bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200">Node.js</span>
-                  <span className="skill-tag bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200">WebSocket</span>
-                  <span className="skill-tag bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200">API設計</span>
+                  <span className="skill-tag bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200">Golang</span>
+                  <span className="skill-tag bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200">Clang</span>
+                  <span className="skill-tag bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200">C++</span>
+                  <span className="skill-tag bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200">Python</span>
                 </div>
               </div>
               <div className="bg-white/50 dark:bg-gray-800/50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 <h3 className="font-semibold text-xl mb-4 text-purple-600 dark:text-purple-400 border-b pb-2 border-purple-100 dark:border-purple-900">その他</h3>
                 <div className="flex flex-wrap gap-2">
                   <span className="skill-tag bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200">Git</span>
-                  <span className="skill-tag bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200">GitHub</span>
-                  <span className="skill-tag bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200">Vercel</span>
-                  <span className="skill-tag bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200">流体力学</span>
+                  <span className="skill-tag bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200">LookerStudio</span>
+                  <span className="skill-tag bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200">Docker</span>
+                  <span className="skill-tag bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200">AWS</span>
                 </div>
               </div>
           </div>
@@ -218,7 +219,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a 
-              href="mailto:example@example.com" 
+              href="mailto:yoshidakerapo@gmail.com" 
               className="btn btn-primary group"
             >
               <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
@@ -229,7 +230,7 @@ export default function Home() {
               メールで連絡する
             </a>
             <a 
-              href="https://github.com/" 
+              href="https://github.com/yoshiddddd" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn btn-secondary group"
