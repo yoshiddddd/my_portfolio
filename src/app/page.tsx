@@ -139,7 +139,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-4">
                     <Image 
-                      src="/globe.svg" 
+                      src="./globe.svg" 
                       alt="GitHub Ranking" 
                       width={30} 
                       height={30} 
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mr-4">
                     <Image 
-                      src="/window.svg" 
+                      src="./window.svg" 
                       alt="Real-time Game" 
                       width={30} 
                       height={30} 

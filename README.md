@@ -46,6 +46,13 @@ npm run dev
 3. 「Source」セクションで「GitHub Actions」を選択
 4. mainブランチにプッシュすると、GitHub Actionsが自動的にビルドとデプロイを行います
 
+### 注意点
+
+- GitHub Pagesにデプロイする場合、サイトはリポジトリ名のサブディレクトリにデプロイされます（例：`https://username.github.io/repository-name/`）
+- このプロジェクトは自動的にリポジトリ名を検出し、適切なbase pathを設定します
+- `.nojekyll`ファイルが自動的に作成され、GitHubのJekyll処理を無効にします
+- 静的アセット（画像など）へのパスは自動的に調整されます
+
 ## カスタマイズ
 
 ポートフォリオをカスタマイズするには：
