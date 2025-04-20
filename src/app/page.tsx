@@ -190,9 +190,10 @@ export default function Home() {
                   AIによって勝敗がジャッジされるインタラクティブな体験を提供しています。
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="skill-tag bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300">WebSocket</span>
-                  <span className="skill-tag bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300">AI</span>
-                  <span className="skill-tag bg-black/5 dark:bg-white/10 text-gray-800 dark:text-gray-200">リアルタイム通信</span>
+                  <span className="skill-tag bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300">Golang</span>
+                  <span className="skill-tag bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300">Dify</span>
+                  <span className="skill-tag bg-black/5 dark:bg-white/10 text-gray-800 dark:text-gray-200">Websocket</span>
+                  
                 </div>
               </div>
             </div>
