@@ -15,7 +15,7 @@ export default function Home() {
               吉田和司
             </h1>
             <p className="text-xl md:text-2xl opacity-90 animate-fade-in mb-8" style={{ animationDelay: "0.2s" }}>
-              システムデザイン学科の学生 / 流体力学研究室
+              Yoshida Kazushi
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <a 
@@ -95,7 +95,6 @@ export default function Home() {
                   <span className="skill-tag bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200">React</span>
                   <span className="skill-tag bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200">Next.js</span>
                   <span className="skill-tag bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200">TypeScript</span>
-                  <span className="skill-tag bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200">Tailwind CSS</span>
                 </div>
               </div>
               <div className="bg-white/50 dark:bg-gray-800/50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
@@ -197,9 +196,73 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="project-card overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="p-1 bg-gradient-to-r from-green-500 to-teal-500"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3 text-green-600 dark:text-green-400">
+                  <Link href="https://chromewebstore.google.com/detail/seikei-otpauto-login/obfiimpocangeejnhmjjhpgikmnbgmob?authuser=0&hl=ja" target="_blank" className="flex items-center hover:underline">
+                    大学OTP自動ログイン
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </Link>
+                </h3>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
+                    大学のワンタイムパスワードを自動取得してログインするChrome拡張機能
+                  </p>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  GmailAPIを使用してメールからOTPを自動取得し、ログインプロセスを効率化します。
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="skill-tag bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-300">JavaScript</span>
+                  <span className="skill-tag bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300">OAuth</span>
+                  <span className="skill-tag bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-300">Gmail API</span>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <div className="mt-8 p-6 border border-dashed border-gray-300 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-gray-800/50 text-center shadow-inner">
+
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="project-card overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="p-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3 text-orange-600 dark:text-orange-400">
+                  <Link href="https://github.com/yoshiddddd/minishell" target="_blank" className="flex items-center hover:underline">
+                    Minishell - Bashの再実装
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </Link>
+                </h3>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-orange-600 dark:text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm">
+                    Bashシェルの機能を再実装したコマンドラインインターフェース
+                  </p>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  C言語で開発されたシェル。パイプ、リダイレクト、環境変数などの基本的なシェル機能を実装しています。
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="skill-tag bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300">C</span>
+                  <span className="skill-tag bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300">Makefile</span>
+                  <span className="skill-tag bg-black/5 dark:bg-white/10 text-gray-800 dark:text-gray-200">シェル</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div className="p-6 border border-dashed border-gray-300 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-gray-800/50 text-center shadow-inner">
             <div className="flex items-center justify-center mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-500 dark:text-blue-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -216,7 +279,7 @@ export default function Home() {
             連絡先
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6">
-            お問い合わせやプロジェクトの依頼は以下からお願いします。
+            お問い合わせは以下からお願いします。
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <a 
