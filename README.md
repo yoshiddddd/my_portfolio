@@ -1,7 +1,7 @@
 # 吉田和司のポートフォリオサイト
 
 このリポジトリは吉田和司のポートフォリオサイトのソースコードを含んでいます。Next.jsとTailwind CSSを使用して構築されています。
-
+https://yoshiddddd.github.io/my_portfolio/
 ## 機能
 
 - レスポンシブデザイン
