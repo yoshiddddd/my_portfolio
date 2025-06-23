@@ -3,43 +3,65 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[var(--background)] to-[var(--background)] via-blue-50/10 dark:via-blue-950/10">
+    <div className="min-h-screen flex flex-col relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="fixed inset-0 -z-50">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(120,119,198,0.3),transparent)]">
+        </div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(120,119,198,0.3),transparent)]">
+        </div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,rgba(120,119,198,0.3),transparent)]">
+        </div>
+        <div className="floating-orbs">
+          <div className="orb orb-1"></div>
+          <div className="orb orb-2"></div>
+          <div className="orb orb-3"></div>
+        </div>
+      </div>
+      
       {/* Hero Header */}
-      <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[var(--header-bg)] -z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/20 to-indigo-600/20 backdrop-blur-sm -z-10"></div>
-        
-        <div className="container mx-auto py-16 md:py-24 text-black">
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="container mx-auto py-16 md:py-24 text-white relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in tracking-tight">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in tracking-tight bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
               吉田和司
             </h1>
-            <p className="text-xl md:text-2xl opacity-90 animate-fade-in mb-8" style={{ animationDelay: "0.2s" }}>
+            <p className="text-2xl md:text-3xl opacity-90 animate-fade-in mb-4 font-light" style={{ animationDelay: "0.2s" }}>
               Yoshida Kazushi
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <p className="text-lg md:text-xl opacity-70 animate-fade-in mb-12 max-w-2xl" style={{ animationDelay: "0.3s" }}>
+              システムデザイン学科 | 流体力学研究室 | フルスタックエンジニア
+            </p>
+            <div className="flex flex-wrap gap-6 animate-fade-in justify-center md:justify-start" style={{ animationDelay: "0.5s" }}>
               <a 
                 href="#contact" 
-                className="btn btn-primary"
+                className="btn btn-hero-primary group"
               >
-                お問い合わせ
+                <span className="relative z-10">お問い合わせ</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a 
                 href="#projects" 
-                className="btn btn-primary"
+                className="btn btn-hero-secondary group"
               >
-                制作物を見る
+                <span className="relative z-10">制作物を見る</span>
+                <div className="absolute inset-0 bg-white/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </div>
           </div>
         </div>
         
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[var(--background)] to-transparent"></div>
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
       </header>
 
-      <main className="flex-grow container mx-auto px-4 md:px-8 py-8 -mt-10 relative z-10">
+      <main className="flex-grow container mx-auto px-4 md:px-8 py-16 relative z-10 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
         {/* Profile Section */}
-        <section className="card mb-16 animate-scale-in" style={{ animationDelay: "0.3s" }}>
+        <section className="card-modern mb-16 animate-scale-in" style={{ animationDelay: "0.3s" }}>
           <h2 className="section-title">
             基本情報
           </h2>
@@ -84,7 +106,7 @@ export default function Home() {
         </section>
 
         {/* Skills Section */}
-        <section className="card mb-16 animate-scale-in" style={{ animationDelay: "0.4s" }} id="skills">
+        <section className="card-modern mb-16 animate-scale-in" style={{ animationDelay: "0.4s" }} id="skills">
           <h2 className="section-title">
             スキル
           </h2>
@@ -124,8 +146,7 @@ export default function Home() {
             制作物
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="project-card overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="p-1 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+            <div className="project-card-modern">
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3 text-blue-600 dark:text-blue-400">
                   <Link href="https://peach-tech-git-contribution-ranking.vercel.app/" target="_blank" className="flex items-center hover:underline">
@@ -161,7 +182,6 @@ export default function Home() {
             </div>
 
             <div className="project-card overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="p-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3 text-purple-600 dark:text-purple-400">
                   <Link href="https://kichijojicipherfrontend.vercel.app/" target="_blank" className="flex items-center hover:underline">
@@ -197,7 +217,6 @@ export default function Home() {
               </div>
             </div>
             <div className="project-card overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="p-1 bg-gradient-to-r from-green-500 to-teal-500"></div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3 text-green-600 dark:text-green-400">
                   <Link href="https://chromewebstore.google.com/detail/seikei-otpauto-login/obfiimpocangeejnhmjjhpgikmnbgmob?authuser=0&hl=ja" target="_blank" className="flex items-center hover:underline">
@@ -231,7 +250,6 @@ export default function Home() {
 
           <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="project-card overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="p-1 bg-gradient-to-r from-orange-500 to-red-500"></div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-3 text-orange-600 dark:text-orange-400">
                   <Link href="https://github.com/yoshiddddd/minishell" target="_blank" className="flex items-center hover:underline">
@@ -274,7 +292,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="card animate-scale-in" style={{ animationDelay: "0.6s" }} id="contact">
+        <section className="card-modern animate-scale-in" style={{ animationDelay: "0.6s" }} id="contact">
           <h2 className="section-title">
             連絡先
           </h2>
